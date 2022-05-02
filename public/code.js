@@ -74,9 +74,9 @@
 
 
 			}
-			if(document.getElementById("message-input").style.textDecoration == "line-through")
+			if(document.getElementById("message-input").style.textDecorationLine == "line-through")
 			{
-				document.getElementById("text1").style.textDecoration="line-through";
+				document.getElementById("text1").style.textDecorationLine="line-through";
 
 
 			}
@@ -149,11 +149,11 @@ function f3() {
     //function to make the text bold using DOM method
 	if(a3==0)
    {
-	document.getElementById("message-input").style.textDecoration="line-through";
+	document.getElementById("message-input").style.textDecorationLine="line-through";
 		a3=1;
    }
-   else if(a2==1){
-	document.getElementById("message-input").style.textDecoration="none" ;
+   else if(a3==1){
+	document.getElementById("message-input").style.textDecoration ="none" ;
 	a3=0;
    }
 

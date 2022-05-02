@@ -127,7 +127,7 @@ input::-webkit-input-placeholder {
 	color: #555;
 	margin-bottom: 5px;
 }
-.chat-screen .messages .message #text1,#text2 {
+.chat-screen .messages .message #text1 {
 	word-wrap: break-word;
 }
 .chat-screen .messages .update {

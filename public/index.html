@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chat Application</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+<body>
+	<div class="app">
+		<div class="screen join-screen active">
+			<div class="form">
+				<h2>Join Chatroom</h2>
+				<div class="form-input">
+					<label>Username</label>
+					<input type="text" id="username">
+				</div>
+				<div class="form-input">
+					<button id="join-user">Join</button>
+				</div>
+			</div>
+		</div>
+		<div class="screen chat-screen">
+			<div class="header">
+				<div class="logo">Chatroom</div>
+				<button id="exit-chat">Exit</button>
+			</div>
+			<div class="messages">
+			</div>
+			<div class="typebox">
+				<input type="text" id="message-input" placeholder="Chat comes here...">
+				<a onclick="f1();" style="position: absolute; top:95%; left: 32px; font-size: 14px ;"><i class="fa fa-bold" aria-hidden="true" style="color: #555; "></i></a>
+				<a onclick="f2()" style="position: absolute; top:95%; left: 62px; font-size: 14px ;"><i class="fa fa-italic" aria-hidden="true"style="color: #555; "></i></a>
+				<a onclick="f3()" style="position: absolute; top:95%; left: 92px; font-size: 14px ;"><i class="fa fa-strikethrough" aria-hidden="true" style="color: #555;"></i></a>
+				<a onclick="f4()" style="position: absolute; top:95%; left: 122px; font-size: 14px ;"><i class="fa fa-link" aria-hidden="true" style="color: #555;"></i></a>
+				<a onclick="f5()" style="position: absolute; top:95%; left: 152px; font-size: 14px ;"><i class="fa fa-list-ol" aria-hidden="true" style="color: #555;"></i></a>
+				<a onclick="f6()" style="position: absolute; top:95%; left: 182px; font-size: 14px ;"><i class="fa fa-list" aria-hidden="true" style="color: #555;"></i></a>
+				<a onclick="f7()" style="position: absolute; top:95%; left: 212px; font-size: 14px ;"><i class="fa fa-quote-left" aria-hidden="true" style="color: #555;"></i></a>
+				<a onclick="f8()" style="position: absolute; top:95%; left: 242px; font-size: 14px ;"><i class="fa-light fa-block-quote" style="color: #555;"></i></a>
+				<a onclick="f9()" style="position: absolute; top:95%; left: 262px; font-size: 14px ;"><i class="fa fa-code" style="color: #555; "></i></a>
+				<a onclick="f10()" style="position: absolute; top:95%; left: 292px; font-size: 14px ;"><i class="fa fa-file-code-o" style="color: #555;"></i></a>
+				<a onclick="f11()" style="position: absolute; top:104%; left: 32px; font-size: 14px ;"><i class="fa fa-plus" style="color: #555;"></i></a>
+				<a onclick="f12()" style="position: absolute; top:104%; left: 62px; font-size: 14px ;"><i class="fa fa-smile-o" aria-hidden="true" style="color: #555;"></i></a>
+				<a onclick="f13()" style="position: absolute; top:104%; left: 92px; font-size: 14px ;"><i class="fa fa-at" aria-hidden="true" style="color: #555;"></i></a>
+
+     			<button id="send-message"></button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="code.js"></script>
+</body>
+</html>
